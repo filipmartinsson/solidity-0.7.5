@@ -1,4 +1,4 @@
-pragma solidity 0.5.1;
+pragma solidity 0.7.5;
 contract MemoryAndStorage {
 
     mapping(uint => User) users;
