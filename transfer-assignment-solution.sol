@@ -30,9 +30,7 @@ contract Bank {
         uint previousSenderBalance = balance[msg.sender];
         
         _transfer(msg.sender, recipient, amount);
-        
-        govermentInstance.addTransaction(msg.sender, recipient, amount);
-        
+                
         assert(balance[msg.sender] == previousSenderBalance - amount);
     }
     
