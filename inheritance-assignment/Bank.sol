@@ -32,8 +32,6 @@ contract Bank is Ownable, Destroyable {
         
         _transfer(msg.sender, recipient, amount);
         
-        govermentInstance.addTransaction(msg.sender, recipient, amount);
-        
         assert(balance[msg.sender] == previousSenderBalance - amount);
     }
     
